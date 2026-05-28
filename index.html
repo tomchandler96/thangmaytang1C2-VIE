@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Bệnh viện Bắc Ninh Số 2</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JPN0WZHD4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4JPN0WZHD4');
+</script>
+<!-- ⚡ Tăng tốc -->
+<link rel="preconnect" href="https://docs.google.com">
+<link rel="dns-prefetch" href="https://docs.google.com">
+
+<!-- 🍏 iPhone tối ưu -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<style>
+body {
+  margin:0;
+  background: linear-gradient(180deg, #cfe8ff, #eaf4ff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+
+/* KHUNG 9:16 */
+.container {
+  width:100%;
+  max-width:420px;
+  aspect-ratio: 9 / 16;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+
+  padding:20px;
+  box-sizing:border-box;
+
+  animation:fadeIn 0.8s ease;
+}
+
+/* LOGO */
+.logo {
+  width:150px;
+  height:150px;
+  object-fit:contain;
+
+  border-radius:50%;
+  background: radial-gradient(circle, #ffffff 60%, #f0f6ff 100%);
+  padding:12px;
+
+  box-shadow: 
+    0 12px 30px rgba(0,0,0,0.15),
+    inset 0 0 12px rgba(0,0,0,0.05);
+
+  margin-bottom:20px;
+
+  animation:zoomIn 0.8s ease;
+}
+
+/* TEXT */
+h1 {
+  font-size:20px;
+  color:#1b4f9c;
+  margin-bottom:5px;
+}
+
+h2 {
+  font-size:26px;
+  color:#0b3d91;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+p {
+  font-size:14px;
+  color:#4a6fa5;
+}
+
+/* LOADING */
+.loader {
+  margin-top:25px;
+  border:5px solid rgba(0,0,0,0.1);
+  border-top:5px solid #4da3ff;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  animation:spin 1s linear infinite;
+}
+
+/* NÚT FALLBACK */
+#fallbackBtn {
+  margin-top:20px;
+  display:none;
+
+  padding:12px 26px;
+  font-size:16px;
+  font-weight:600;
+
+  color:white;
+  background:#2f80ed;
+
+  border:none;
+  border-radius:12px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+
+  cursor:pointer;
+  transition: all 0.2s ease;
+}
+
+#fallbackBtn:active {
+  transform: scale(0.96);
+}
+
+/* ANIMATION */
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.85); opacity:0; }
+  to { transform: scale(1); opacity:1; }
+}
+
+/* FOOTER */
+.footer {
+  position:absolute;
+  bottom:15px;
+  font-size:12px;
+  color:#6c8fc7;
+}
+</style>
+
+<script>
+const linkSlide = "hhttps://docs.google.com/presentation/d/e/2PACX-1vRWa4UHYLCSGNC17To9iLZk_kJO1Lk-GzWZO6OH87LmHaz3lV-WoVhSTLNwHp_oP5RJPKJR54VFNS8e/pub?start=false&loop=false&delayms=999999&rm=minimal";
+
+// 🚀 Auto chuyển nhanh
+setTimeout(function(){
+  window.location.href = linkSlide;
+}, 1200);
+
+// ⚠️ Hiện nút sau 5s
+setTimeout(function(){
+  document.getElementById("fallbackBtn").style.display = "block";
+}, 5000);
+
+// 👆 Tap toàn màn hình
+document.addEventListener("click", function(e){
+  if(e.target.id !== "fallbackBtn"){
+    window.location.href = linkSlide;
+  }
+});
+
+// 👉 Nút chuyển tiếp
+function goNext(){
+  window.location.href = linkSlide;
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LOGO -->
+  <img src="https://raw.githubusercontent.com/tomchandler96/chaomungtang2/main/logo.png" class="logo">
+
+  <h1>Chào mừng đến</h1>
+  <h2>Bệnh Viện Đa Khoa<br>Bắc Ninh Số 2</h2>
+
+  <p>Hệ thống hướng dẫn đang được tải...</p>
+
+  <div class="loader"></div>
+
+  <!-- NÚT -->
+  <button id="fallbackBtn" onclick="goNext()">Chuyển tiếp</button>
+
+</div>
+
+<div class="footer">
+  Vui lòng chờ trong giây lát
+</div>
+
+</body>
+</html>
